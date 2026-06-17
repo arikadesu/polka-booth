@@ -1,0 +1,43 @@
+:root {
+  --bg-cream: #FBF9F5;
+  --surface-warm: #F3EEE6;
+  --border-faint: #E6DFD5;
+  --text-main: #2C2520;
+  --text-muted: #7A726A;
+  --transition-smooth: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg-cream);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.logo { width: 70px; cursor: pointer; margin-bottom: 1rem; }
+.logo img { width: 100%; height: auto; }
+
+.heading-content { text-align: center; margin-bottom: 1.5rem; }
+.heading-content h1 { font-size: 1.1rem; font-weight: 400; text-transform: uppercase; letter-spacing: 0.1em; }
+.heading-content p { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; }
+
+.sticker-btns { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; justify-content: center; }
+.sticker-btns button { background: white; color: var(--text-main); border: 1px solid var(--border-faint); padding: 0.4rem 0.8rem; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.sticker-btns button:hover { border-color: var(--text-main); background: var(--surface-warm); }
+.sticker-btns button#reset { background: var(--surface-warm); }
+
+#canvasContainer { position: relative; width: 100%; max-width: 380px; aspect-ratio: 4 / 5; border: 1px solid var(--border-faint); box-shadow: 0 25px 50px rgba(44, 37, 32, 0.06); background: white; margin: 1.5rem 0; }
+canvas { width: 100%; height: 100%; cursor: grab; display: block; }
+canvas:active { cursor: grabbing; }
+
+.button-container { display: flex; gap: 1rem; margin-top: 1rem; }
+button { background: var(--text-main); color: var(--bg-cream); border: none; padding: 1rem 2rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; cursor: pointer; transition: var(--transition-smooth); }
+button#homeBtn { background: transparent; color: var(--text-main); border: 1px solid var(--border-faint); }
+button#homeBtn:hover { background: var(--surface-warm); border-color: var(--text-main); }

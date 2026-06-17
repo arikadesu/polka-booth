@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Polkabooth</title>
+  <link rel="icon" href="Assets/Logo/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="StyleSheets/home.css" />
+</head>
+<body>
+  <div class="logo">
+    <img src="Assets/Logo/logo.png" alt="Logo">
+  </div>
+
+  <div class="home-container">
+    <h1 class="studio-title">Studio Polkabooth</h1>
+    <p class="studio-subtitle">A small pocket of the internet to freeze a fleeting afternoon. Pick a pattern, settle into the frame, and walk away with a piece of today.</p>
+    <div class="button-container">
+      <button id="enter-button">Enter Studio</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('enter-button').addEventListener('click', () => {
+      window.location.href = 'menu.html';
+    });
+  </script>
+</body>
+</html>

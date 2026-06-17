@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select Layout & Frame Design</title>
+  <link rel="icon" href="Assets/fish-photobooth/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="StyleSheets/home.css" />
+</head>
+<body>
+  <div class="logo" onclick="window.location.href='index.html'">
+    <img src="Assets/Logo/logo.png" alt="Logo">
+  </div>
+
+  <div class="menu-container">
+    <h1 class="studio-title">1. Select Framing Layout</h1>
+    <div class="setup-grid">
+      <div class="option-card selected" id="opt-2">
+        <div class="icon-preview grid-2">
+          <div></div><div></div>
+        </div>
+        <h3>2-Grid Vertical Strip</h3>
+      </div>
+      <div class="option-card" id="opt-4">
+        <div class="icon-preview grid-4">
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <h3>4-Grid Editorial Layout</h3>
+      </div>
+    </div>
+
+    <h1 class="studio-title" style="margin-top: 1rem;">2. Select Frame Motif</h1>
+    <div class="design-grid">
+      <div class="design-card selected" id="dsgn-cocoablue">
+        <div class="color-preview dots-preview cocoablue-bg"></div>
+        <h4>Cocoa Blue</h4>
+      </div>
+      <div class="design-card" id="dsgn-espresso">
+        <div class="color-preview dots-preview espresso-bg"></div>
+        <h4>Espresso Peony</h4>
+      </div>
+      <div class="design-card" id="dsgn-matcha">
+        <div class="color-preview dots-preview matcha-bg"></div>
+        <h4>Strawberry Matcha</h4>
+      </div>
+    </div>
+
+    <h1 class="studio-title" style="margin-top: 1rem;">3. Border Option</h1>
+    <div class="setup-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 1rem;">
+      <div class="option-card selected" id="border-on" style="padding: 1.2rem;">
+        <h3>With Border</h3>
+      </div>
+      <div class="option-card" id="border-off" style="padding: 1.2rem;">
+        <h3>No Border</h3>
+      </div>
+    </div>
+
+    <div id="color-selection-wrapper" class="design-grid" style="grid-template-columns: 1fr 1fr 1fr; gap: 0.75rem;">
+      <div class="design-card selected" id="color-white" style="padding: 1rem;">
+        <div class="color-preview" style="background: #fde5e8; border: 1px solid #E6DFD5; width:30px; height:30px; margin-bottom:0.5rem; border-radius:50%;"></div>
+        <h4>Soft Pink</h4>
+      </div>
+      <div class="design-card" id="color-cream" style="padding: 1rem;">
+        <div class="color-preview" style="background: #18191d; width:30px; height:30px; margin-bottom:0.5rem; border-radius:50%;"></div>
+        <h4>Deep Latte</h4>
+      </div>
+      <div class="design-card" id="color-clay" style="padding: 1rem;">
+        <div class="color-preview" style="background: #fff2ba; width:30px; height:30px; margin-bottom:0.5rem; border-radius:50%;"></div>
+        <h4>Soft Cream</h4>
+      </div>
+    </div>
+
+    <div class="flow-actions">
+      <button id="menu-camera-button">Take photos</button>
+      <button id="menu-upload-button" class="btn-secondary">Upload photos</button>
+    </div>
+  </div>
+
+  <script src="Javascripts/home.js"></script>
+</body>
+</html>

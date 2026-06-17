@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera Booth</title>
+  <link rel="icon" href="Assets/fish-photobooth/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="StyleSheets/camera.css" />
+</head>
+<body>
+  <div class="logo" onclick="window.location.href='index.html'">
+    <img src="Assets/Logo/logo.png" alt="Logo">
+  </div>
+
+  <div class="status-pill" id="capture-status">Ready</div>
+
+  <div class="photobooth-container" id="booth">
+    <div class="countdown-timer">3</div>
+    <video id="liveVideo" autoplay playsinline muted></video>
+    <canvas id="finalCanvas" width="1176" height="1470"></canvas>
+  </div>
+
+  <div class="filter-tabs">
+    <button class="filter-btn active" id="f-original">Original</button>
+    <button class="filter-btn" id="f-vintage">Vintage</button>
+    <button class="filter-btn" id="f-bw">Black & White</button>
+  </div>
+
+  <div class="controls">
+    <button id="takePhoto">Capture Sequence</button>
+  </div>
+
+  <script src="Javascripts/camera.js"></script>
+</body>
+</html>

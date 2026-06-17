@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review & Export Strip</title>
+  <link rel="icon" href="Assets/fish-photobooth/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="StyleSheets/final.css" />
+</head>
+<body>
+  <div class="logo" onclick="window.location.href='index.html'">
+    <img src="Assets/Logo/logo.png" alt="Logo">
+  </div>
+
+  <div class="heading-content">
+    <h1>Review Portrait Strip</h1>
+    <p>Incorporate accents, adjust filters, and compile print-ready resolution</p>
+    
+    <div class="sticker-btns">
+  <button id="emoji-heart" class="emoji-sticker-btn">❤️</button>
+  <button id="emoji-clover" class="emoji-sticker-btn">🍀</button>
+  <button id="emoji-sparkles" class="emoji-sticker-btn">✨</button>
+  <button id="emoji-saturn" class="emoji-sticker-btn">🪐</button>
+  <button id="emoji-cherry" class="emoji-sticker-btn">🍒</button>
+  <button id="emoji-apple" class="emoji-sticker-btn">🍎</button>
+  <button id="emoji-cookie" class="emoji-sticker-btn">🍪</button>
+
+  <button id="reset">Clear Accents</button>
+</div>
+
+  <div id="canvasContainer">
+    <canvas id="finalCanvas" width="1176" height="1470"></canvas>
+  </div>
+
+  <div class="button-container">
+    <button id="downloadBtn">Export High-Res</button>
+    <button id="homeBtn">Retake</button>
+  </div>
+
+  <script src="Javascripts/final.js"></script>
+</body>
+</html>
